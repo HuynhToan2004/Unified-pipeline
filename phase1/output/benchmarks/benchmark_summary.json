@@ -1,0 +1,11 @@
+{
+  "results": [
+    {
+      "provider": "heuristic",
+      "records": 6,
+      "atomic_arguments": 108,
+      "seconds": 0.302,
+      "output": "output\\benchmarks\\Phase1_heuristic.jsonl"
+    }
+  ]
+}

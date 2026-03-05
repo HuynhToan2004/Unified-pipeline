@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "records": 6,
+    "phase3_mode": "retrieval_only",
+    "input": "..\\phase2\\output\\Novelty_Verification_Targets.jsonl"
+  },
+  "items": [
+    {
+      "paper": {
+        "core_task": "Assess scientific papers with structured peer-review analysis.",
+        "contributions": [
+          "Auto-extracted from available paper/review context."
+        ],
+        "key_terms": [
+          "models",
+          "authors",
+          "any-to-any",
+          "pre-trained",
+          "proposed",
+          "borderline",
+          "multimodal",
+          "llm",
+          "alignment",
+          "but"
+        ],
+        "must_have_entities": [
+          "LLM",
+          "SAC",
+          "They",
+          "SOTA",
+          "Based",
+          "ACs",
+          "See"
+        ]
+      },
+      "review": {
+        "novelty_claims": [
+          {
+            "claim_id": "s1",
+            "text": "The paper introduces an any-to-any multimodal LLM, where modality alignment is performed not only in the input as in previous approaches, but also in the output (between the LLM and diffusion decoders of different modalities). The reviewers raised concerns about...",
+            "stance": "not_novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": true,
+            "prior_work_strings": [
+              "previous approaches"
+            ],
+            "evidence_expected": "method_similarity"
+          }
+        ],
+        "all_citations_raw": []
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Assess scientific papers with structured peer-review analysis. Auto-extracted from available paper/review context.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Infer the research core task from abstract and introduction.",
+        "contributions": [
+          "Auto-extracted from available paper/review context."
+        ],
+        "key_terms": [
+          "modalities",
+          "alignment",
+          "performance",
+          "technique",
+          "different",
+          "dataset",
+          "multi-modal",
+          "llm",
+          "any-to-any",
+          "mm-llm"
+        ],
+        "must_have_entities": [
+          "LLM",
+          "MM-LLM",
+          "To",
+          "Extending",
+          "LLMs",
+          "Various",
+          "Although",
+          "Does",
+          "Will"
+        ]
+      },
+      "review": {
+        "novelty_claims": [],
+        "all_citations_raw": []
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Infer the research core task from abstract and introduction. Auto-extracted from available paper/review context.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Enable any-to-any multimodal understanding and generation.",
+        "contributions": [
+          "Auto-extracted from available paper/review context."
+        ],
+        "key_terms": [
+          "generation",
+          "text",
+          "system",
+          "next-gpt",
+          "image",
+          "not",
+          "would",
+          "end-to-end",
+          "language",
+          "audio"
+        ],
+        "must_have_entities": [
+          "NExT-GPT",
+          "Language Learning Model",
+          "MM-LLM",
+          "Furthermore",
+          "MosIT",
+          "If",
+          "For",
+          "It",
+          "What",
+          "Additionally",
+          "MME",
+          "MMBench"
+        ]
+      },
+      "review": {
+        "novelty_claims": [],
+        "all_citations_raw": [
+          "[1]",
+          "[2]",
+          "[3]",
+          "[4]",
+          "[5]",
+          "[6]",
+          "[7]",
+          "[8]"
+        ]
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Enable any-to-any multimodal understanding and generation. Auto-extracted from available paper/review context.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Infer the research core task from abstract and introduction.",
+        "contributions": [
+          "Auto-extracted from available paper/review context."
+        ],
+        "key_terms": [
+          "diffusion",
+          "text",
+          "models",
+          "generation",
+          "tokens",
+          "approach",
+          "encoders",
+          "not",
+          "proposes",
+          "enables"
+        ],
+        "must_have_entities": [
+          "Specifically",
+          "Furthermore",
+          "LLMs",
+          "They",
+          "More",
+          "LLM",
+          "Unfortunately",
+          "Please"
+        ]
+      },
+      "review": {
+        "novelty_claims": [
+          {
+            "claim_id": "s1",
+            "text": "This paper proposes a novel approach to enable any-to-any generation by integrating off-the-shelf diffusion models with LLMs. The proposed approach to align the semantic tokens with outputs from text encoders of diffusion models seems efficient. The results look promising.",
+            "stance": "novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          }
+        ],
+        "all_citations_raw": []
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Infer the research core task from abstract and introduction. Auto-extracted from available paper/review context.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Infer the research core task from abstract and introduction.",
+        "contributions": [
+          "Auto-extracted from available paper/review context."
+        ],
+        "key_terms": [
+          "different",
+          "tuning",
+          "may",
+          "summary",
+          "proposed",
+          "end-to-end",
+          "general-purpose",
+          "any-to-any",
+          "mm-llm",
+          "system"
+        ],
+        "must_have_entities": [
+          "MM-LLM",
+          "NExT-GPT",
+          "LLM",
+          "Introduced",
+          "Annotated",
+          "What",
+          "Please",
+          "Moon",
+          "Madotto",
+          "Lin",
+          "Nagarajan",
+          "Smith"
+        ]
+      },
+      "review": {
+        "novelty_claims": [],
+        "all_citations_raw": [
+          "2309.16058",
+          "[1]"
+        ]
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Infer the research core task from abstract and introduction. Auto-extracted from available paper/review context.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Enable any-to-any multimodal understanding and generation.",
+        "contributions": [
+          "Auto-extracted from available paper/review context."
+        ],
+        "key_terms": [
+          "multimodal",
+          "proposed",
+          "which",
+          "next-gpt",
+          "mosit",
+          "does",
+          "decoders",
+          "authors",
+          "dataset",
+          "understanding"
+        ],
+        "must_have_entities": [
+          "NExT-GPT",
+          "MM-LLM",
+          "LLM",
+          "MosIT",
+          "Large Language Model",
+          "LLMs",
+          "There",
+          "How",
+          "Can",
+          "Soundness",
+          "Presentation",
+          "Contribution"
+        ]
+      },
+      "review": {
+        "novelty_claims": [
+          {
+            "claim_id": "s1",
+            "text": "The paper introduces NExT-GPT, a novel multimodal large language model (MM-LLM) that integrates a text-based LLM with multimodal adaptors and diffusion decoders to handle text, image, video, and audio inputs and outputs. The model is designed to be flexible, allowing...",
+            "stance": "novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [
+              "existing models"
+            ],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s2",
+            "text": "The novelty of the proposed method is questionable, as it appears to be a combination of existing models and techniques without significant innovation.",
+            "stance": "novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [
+              "existing models and techniques without significant innovation"
+            ],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s3",
+            "text": "Reasons: The paper, while introducing a novel multimodal LLM with a flexible architecture and a new dataset, fails to convincingly demonstrate a significant technical contribution over existing models. The primary concerns include the lack of novelty in the approach, the...",
+            "stance": "not_novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [
+              "existing models"
+            ],
+            "evidence_expected": "method_similarity"
+          }
+        ],
+        "all_citations_raw": []
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Enable any-to-any multimodal understanding and generation. Auto-extracted from available paper/review context.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    }
+  ]
+}

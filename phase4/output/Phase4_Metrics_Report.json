@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "phase": "phase4",
+    "inputs": {
+      "phase2_master": "C:\\Users\\HOY9HC\\Desktop\\Code\\Unified_pipeline\\phase2\\output\\Master_Classification.jsonl",
+      "phase3_retrieval": "C:\\Users\\HOY9HC\\Desktop\\Code\\Unified_pipeline\\phase3\\output\\Novelty_Assessment_Report.json"
+    },
+    "records": 6
+  },
+  "cfi": {
+    "flaw_weights": {
+      "Insufficient Implementation Details": 6.0,
+      "General writing & Clarity issues": 3.0,
+      "Missing/ weak Baselines": 2.0,
+      "Insufficient Experimental Validation": 7.0,
+      "Lack of Discussion on Limitations": 2.0,
+      "Limited Novelty": 1.0
+    },
+    "macro_topic_stats": {
+      "Reproducibility & Open Science": {
+        "count": 1,
+        "total_score": 6.0,
+        "micro_flaws": {
+          "Insufficient Implementation Details": 6.0
+        },
+        "avg_score": 6.0
+      },
+      "Clarity & Presentation": {
+        "count": 1,
+        "total_score": 3.0,
+        "micro_flaws": {
+          "General writing & Clarity issues": 3.0
+        },
+        "avg_score": 3.0
+      },
+      "Experimental Design & Evaluation": {
+        "count": 2,
+        "total_score": 9.0,
+        "micro_flaws": {
+          "Missing/ weak Baselines": 2.0,
+          "Insufficient Experimental Validation": 7.0
+        },
+        "avg_score": 4.5
+      },
+      "Applicability, Scalability & Limitations": {
+        "count": 1,
+        "total_score": 2.0,
+        "micro_flaws": {
+          "Lack of Discussion on Limitations": 2.0
+        },
+        "avg_score": 2.0
+      },
+      "Novelty & Contribution": {
+        "count": 1,
+        "total_score": 1.0,
+        "micro_flaws": {
+          "Limited Novelty": 1.0
+        },
+        "avg_score": 1.0
+      }
+    },
+    "reviewer_scores": {
+      "Meta": 18.0,
+      "Human_2": 13.0,
+      "Human_3": 13.0,
+      "Human_4": 13.0,
+      "LLM_SEA": 16.0,
+      "Human_1": 12.0
+    }
+  },
+  "csp": {
+    "reviewer_scores": {
+      "Meta": {
+        "reviewer_type": "Meta",
+        "cps": 5.8769,
+        "nsr": 10.0769,
+        "argument_count": 11,
+        "decision_text": "Reject"
+      },
+      "Human_1": {
+        "reviewer_type": "Human",
+        "cps": 7.8235,
+        "nsr": 100.0,
+        "argument_count": 11,
+        "decision_text": "Unknown"
+      },
+      "Human_2": {
+        "reviewer_type": "Human",
+        "cps": 11.3039,
+        "nsr": 100.0,
+        "argument_count": 22,
+        "decision_text": "Unknown"
+      },
+      "Human_3": {
+        "reviewer_type": "Human",
+        "cps": 10.0278,
+        "nsr": 7.1724,
+        "argument_count": 14,
+        "decision_text": "Unknown"
+      },
+      "Human_4": {
+        "reviewer_type": "Human",
+        "cps": 8.8999,
+        "nsr": 100.0,
+        "argument_count": 14,
+        "decision_text": "Unknown"
+      },
+      "LLM_SEA": {
+        "reviewer_type": "LLM",
+        "cps": 16.2419,
+        "nsr": 100.0,
+        "argument_count": 36,
+        "decision_text": "Reject"
+      }
+    }
+  },
+  "novelty": {
+    "reviewer_scores": {
+      "Meta": {
+        "claim_count": 1,
+        "not_novel_claim_count": 1,
+        "prior_work_mention_count": 1,
+        "citation_count": 0,
+        "retrieved_candidate_count": 0,
+        "novelty_risk_score": 62.0,
+        "reviewer_type": "Meta"
+      },
+      "Human_1": {
+        "claim_count": 0,
+        "not_novel_claim_count": 0,
+        "prior_work_mention_count": 0,
+        "citation_count": 0,
+        "retrieved_candidate_count": 0,
+        "novelty_risk_score": 0.0,
+        "reviewer_type": "Human"
+      },
+      "Human_2": {
+        "claim_count": 0,
+        "not_novel_claim_count": 0,
+        "prior_work_mention_count": 0,
+        "citation_count": 8,
+        "retrieved_candidate_count": 0,
+        "novelty_risk_score": 10.0,
+        "reviewer_type": "Human"
+      },
+      "Human_3": {
+        "claim_count": 1,
+        "not_novel_claim_count": 0,
+        "prior_work_mention_count": 0,
+        "citation_count": 0,
+        "retrieved_candidate_count": 0,
+        "novelty_risk_score": 0.0,
+        "reviewer_type": "Human"
+      },
+      "Human_4": {
+        "claim_count": 0,
+        "not_novel_claim_count": 0,
+        "prior_work_mention_count": 0,
+        "citation_count": 2,
+        "retrieved_candidate_count": 0,
+        "novelty_risk_score": 4.0,
+        "reviewer_type": "Human"
+      },
+      "LLM_SEA": {
+        "claim_count": 3,
+        "not_novel_claim_count": 1,
+        "prior_work_mention_count": 0,
+        "citation_count": 0,
+        "retrieved_candidate_count": 0,
+        "novelty_risk_score": 20.0,
+        "reviewer_type": "LLM"
+      }
+    }
+  },
+  "summary_by_reviewer_type": {
+    "Meta": {
+      "reviewer_count": 1,
+      "avg_cfi": 18.0,
+      "avg_cps": 5.8769,
+      "avg_nsr": 10.0769,
+      "avg_novelty_risk_score": 62.0
+    },
+    "Human": {
+      "reviewer_count": 4,
+      "avg_cfi": 12.75,
+      "avg_cps": 9.5138,
+      "avg_nsr": 76.7931,
+      "avg_novelty_risk_score": 3.5
+    },
+    "LLM": {
+      "reviewer_count": 1,
+      "avg_cfi": 16.0,
+      "avg_cps": 16.2419,
+      "avg_nsr": 100.0,
+      "avg_novelty_risk_score": 20.0
+    }
+  }
+}
