@@ -2,47 +2,74 @@
   "meta": {
     "records": 6,
     "phase3_mode": "retrieval_only",
-    "input": "..\\phase2\\output\\Novelty_Verification_Targets.jsonl"
+    "input": "/home/25thanh.tk/Unified-pipeline/phase2/output/Novelty_Verification_Targets.jsonl"
   },
   "items": [
     {
       "paper": {
-        "core_task": "Assess scientific papers with structured peer-review analysis.",
+        "core_task": "Studying the implicit bias of a continuous dynamic approximation of the Momentum method for diagonal linear neural networks.",
         "contributions": [
-          "Auto-extracted from available paper/review context."
+          "Demonstrates reduced sensitivity of the continuous dynamics' limit point to initialization.",
+          "Shows that the initial loss gradient influences the limit point of the dynamics."
         ],
         "key_terms": [
-          "models",
-          "authors",
-          "any-to-any",
-          "pre-trained",
-          "proposed",
-          "borderline",
-          "multimodal",
-          "llm",
-          "alignment",
-          "but"
+          "implicit bias",
+          "continuous dynamic",
+          "Momentum method",
+          "diagonal linear neural networks",
+          "limit point",
+          "initialization",
+          "gradient",
+          "loss",
+          "discrete-time heavyball method",
+          "step size"
         ],
         "must_have_entities": [
-          "LLM",
-          "SAC",
-          "They",
-          "SOTA",
-          "Based",
-          "ACs",
-          "See"
+          "Momentum method",
+          "heavyball method",
+          "continuous dynamics",
+          "discrete dynamics"
         ]
       },
       "review": {
         "novelty_claims": [
           {
             "claim_id": "s1",
-            "text": "The paper introduces an any-to-any multimodal LLM, where modality alignment is performed not only in the input as in previous approaches, but also in the output (between the LLM and diffusion decoders of different modalities). The reviewers raised concerns about...",
-            "stance": "not_novel",
-            "confidence_lang": "medium",
+            "text": "This paper studies the implicit bias of a continuous dynamic corresponding to a first-order approximation of the Momentum method for diagonal linear neural networks.",
+            "stance": "unclear",
+            "confidence_lang": "low",
             "mentions_prior_work": true,
             "prior_work_strings": [
-              "previous approaches"
+              "Momentum method"
+            ],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s2",
+            "text": "The authors show that the limit point of the continuous dynamics is less affected by the initialization.",
+            "stance": "unclear",
+            "confidence_lang": "low",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "results_similarity"
+          },
+          {
+            "claim_id": "s3",
+            "text": "Also, they show that the gradient of the loss at the initialization affects the limit point of the dynamics.",
+            "stance": "unclear",
+            "confidence_lang": "low",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "results_similarity"
+          },
+          {
+            "claim_id": "s4",
+            "text": "One main concern is the connection between the continuous version considered and the practical discrete-time heavyball method.",
+            "stance": "unclear",
+            "confidence_lang": "high",
+            "mentions_prior_work": true,
+            "prior_work_strings": [
+              "discrete-time heavyball method"
             ],
             "evidence_expected": "method_similarity"
           }
@@ -54,60 +81,13 @@
       "queries": [
         {
           "id": "C1",
-          "query": "Assess scientific papers with structured peer-review analysis. Auto-extracted from available paper/review context.",
+          "query": "Studying the implicit bias of a continuous dynamic approximation of the Momentum method for diagonal linear neural networks. Demonstrates reduced sensitivity of the continuous dynamics' limit point to initialization.",
           "status": "ok",
           "count": 0
-        }
-      ],
-      "candidate_pool_top30": [],
-      "stats": {
-        "total_candidates": 0,
-        "after_dedup": 0,
-        "after_nontechnical_filter": 0,
-        "after_year_filter": 0,
-        "final": 0
-      }
-    },
-    {
-      "paper": {
-        "core_task": "Infer the research core task from abstract and introduction.",
-        "contributions": [
-          "Auto-extracted from available paper/review context."
-        ],
-        "key_terms": [
-          "modalities",
-          "alignment",
-          "performance",
-          "technique",
-          "different",
-          "dataset",
-          "multi-modal",
-          "llm",
-          "any-to-any",
-          "mm-llm"
-        ],
-        "must_have_entities": [
-          "LLM",
-          "MM-LLM",
-          "To",
-          "Extending",
-          "LLMs",
-          "Various",
-          "Although",
-          "Does",
-          "Will"
-        ]
-      },
-      "review": {
-        "novelty_claims": [],
-        "all_citations_raw": []
-      },
-      "mode": "per_contribution",
-      "paper_year": null,
-      "queries": [
+        },
         {
-          "id": "C1",
-          "query": "Infer the research core task from abstract and introduction. Auto-extracted from available paper/review context.",
+          "id": "C2",
+          "query": "Studying the implicit bias of a continuous dynamic approximation of the Momentum method for diagonal linear neural networks. Shows that the initial loss gradient influences the limit point of the dynamics.",
           "status": "ok",
           "count": 0
         }
@@ -123,108 +103,35 @@
     },
     {
       "paper": {
-        "core_task": "Enable any-to-any multimodal understanding and generation.",
+        "core_task": "Studying the implicit regularization effect of momentum methods through continuous-time approximations in diagonal networks.",
         "contributions": [
-          "Auto-extracted from available paper/review context."
+          "Analysis of implicit regularization of momentum methods using continuous-time approximations for diagonal networks.",
+          "Discussion on how initialization and the gradient of the loss at initialization influence the recovered implicit bias."
         ],
         "key_terms": [
-          "generation",
-          "text",
-          "system",
-          "next-gpt",
-          "image",
-          "not",
-          "would",
-          "end-to-end",
-          "language",
-          "audio"
+          "implicit regularization",
+          "momentum methods",
+          "continuous-time approximations",
+          "diagonal networks",
+          "initialization",
+          "gradient of the loss"
         ],
         "must_have_entities": [
-          "NExT-GPT",
-          "Language Learning Model",
-          "MM-LLM",
-          "Furthermore",
-          "MosIT",
-          "If",
-          "For",
-          "It",
-          "What",
-          "Additionally",
-          "MME",
-          "MMBench"
-        ]
-      },
-      "review": {
-        "novelty_claims": [],
-        "all_citations_raw": [
-          "[1]",
-          "[2]",
-          "[3]",
-          "[4]",
-          "[5]",
-          "[6]",
-          "[7]",
-          "[8]"
-        ]
-      },
-      "mode": "per_contribution",
-      "paper_year": null,
-      "queries": [
-        {
-          "id": "C1",
-          "query": "Enable any-to-any multimodal understanding and generation. Auto-extracted from available paper/review context.",
-          "status": "ok",
-          "count": 0
-        }
-      ],
-      "candidate_pool_top30": [],
-      "stats": {
-        "total_candidates": 0,
-        "after_dedup": 0,
-        "after_nontechnical_filter": 0,
-        "after_year_filter": 0,
-        "final": 0
-      }
-    },
-    {
-      "paper": {
-        "core_task": "Infer the research core task from abstract and introduction.",
-        "contributions": [
-          "Auto-extracted from available paper/review context."
-        ],
-        "key_terms": [
-          "diffusion",
-          "text",
-          "models",
-          "generation",
-          "tokens",
-          "approach",
-          "encoders",
-          "not",
-          "proposes",
-          "enables"
-        ],
-        "must_have_entities": [
-          "Specifically",
-          "Furthermore",
-          "LLMs",
-          "They",
-          "More",
-          "LLM",
-          "Unfortunately",
-          "Please"
+          "Theorem 1",
+          "Proposition 3",
+          "momentum ODE"
         ]
       },
       "review": {
         "novelty_claims": [
           {
             "claim_id": "s1",
-            "text": "This paper proposes a novel approach to enable any-to-any generation by integrating off-the-shelf diffusion models with LLMs. The proposed approach to align the semantic tokens with outputs from text encoders of diffusion models seems efficient. The results look promising.",
-            "stance": "novel",
-            "confidence_lang": "medium",
+            "text": "The paper addresses a well-motivated problem.",
+            "stance": "unclear",
+            "confidence_lang": "high",
             "mentions_prior_work": false,
             "prior_work_strings": [],
-            "evidence_expected": "method_similarity"
+            "evidence_expected": "None"
           }
         ],
         "all_citations_raw": []
@@ -234,7 +141,13 @@
       "queries": [
         {
           "id": "C1",
-          "query": "Infer the research core task from abstract and introduction. Auto-extracted from available paper/review context.",
+          "query": "Studying the implicit regularization effect of momentum methods through continuous-time approximations in diagonal networks. Analysis of implicit regularization of momentum methods using continuous-time approximations for diagonal networks.",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "id": "C2",
+          "query": "Studying the implicit regularization effect of momentum methods through continuous-time approximations in diagonal networks. Discussion on how initialization and the gradient of the loss at initialization influence the recovered implicit bias.",
           "status": "ok",
           "count": 0
         }
@@ -250,41 +163,258 @@
     },
     {
       "paper": {
-        "core_task": "Infer the research core task from abstract and introduction.",
+        "core_task": "Analyzing the implicit bias of optimization algorithms, specifically extending the analysis of GD to GD with momentum (HB and NAG) in diagonal linear networks.",
+        "contributions": [
+          "The paper extends existing analysis of implicit bias from Gradient Descent (GD) to Gradient Descent with momentum (Heavy Ball and Nesterov Accelerated Gradient) for diagonal linear networks.",
+          "The work uses a continuous-time approximation for HB and NAG to show that their limiting iterations solve a distinct minimization problem compared to GD.",
+          "The paper demonstrates that HB and NAG can lead to improved generalization ability under specific conditions."
+        ],
+        "key_terms": [
+          "implicit bias",
+          "diagonal linear network",
+          "Gradient Descent (GD)",
+          "momentum (HB and NAG)",
+          "continuous-time approximation",
+          "generalization ability"
+        ],
+        "must_have_entities": [
+          "Woodworth et al., 2020",
+          "Gradient Descent (GD)",
+          "Heavy Ball (HB)",
+          "Nesterov Accelerated Gradient (NAG)",
+          "Gunasekar et al., 2018",
+          "Wang et al., 2022",
+          "Jelassi et al., 2022"
+        ]
+      },
+      "review": {
+        "novelty_claims": [
+          {
+            "claim_id": "s3",
+            "text": "The theoretical results are novel and solid.",
+            "stance": "novel",
+            "confidence_lang": "high",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "theory_overlap"
+          },
+          {
+            "claim_id": "a1",
+            "text": "The paper claims that implicit bias works do not consider momentum, but existing works (Gunasekar et al., 2018; Wang et al., 2022; Jelassi et al., 2022) study the implicit bias of momentum-based optimizers.",
+            "stance": "somewhat_novel",
+            "confidence_lang": "high",
+            "mentions_prior_work": true,
+            "prior_work_strings": [
+              "Gunasekar et al., 2018",
+              "Wang et al., 2022",
+              "Jelassi et al., 2022"
+            ],
+            "evidence_expected": "method_similarity"
+          }
+        ],
+        "all_citations_raw": [
+          "Woodworth et al., 2020",
+          "Gunasekar et al., 2018",
+          "Wang et al., 2022",
+          "Jelassi et al., 2022"
+        ]
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Analyzing the implicit bias of optimization algorithms, specifically extending the analysis of GD to GD with momentum (HB and NAG) in diagonal linear networks. The paper extends existing analysis of implicit bias from Gradient Descent (GD) to Gradient Descent with momentum (Heavy Ball and Nesterov Accelerated Gradient) for diagonal linear networks.",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "id": "C2",
+          "query": "Analyzing the implicit bias of optimization algorithms, specifically extending the analysis of GD to GD with momentum (HB and NAG) in diagonal linear networks. The work uses a continuous-time approximation for HB and NAG to show that their limiting iterations solve a distinct minimization problem compared to GD.",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "id": "C3",
+          "query": "Analyzing the implicit bias of optimization algorithms, specifically extending the analysis of GD to GD with momentum (HB and NAG) in diagonal linear networks. The paper demonstrates that HB and NAG can lead to improved generalization ability under specific conditions.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Analyzing implicit biases of momentum-based optimization techniques in diagonal linear networks.",
+        "contributions": [
+          "Investigates the dual role of momentum in mitigating initialization effects and its dependency on gradient initialization, steering towards sparse regression.",
+          "Shifts focus from Gradient Flow/Descent to the role of momentum in neural architectures, presenting a novel and impactful contribution.",
+          "Provides an intricate theoretical characterization of momentum's implicit bias, demonstrating its mitigating impact on initialization."
+        ],
+        "key_terms": [
+          "implicit biases",
+          "momentum-based optimization",
+          "Heavy-Ball (HB)",
+          "Nesterov's Accelerated Gradient (NAG)",
+          "diagonal linear networks",
+          "initialization",
+          "sparse ($L^1$) regression",
+          "gradient initialization",
+          "generalization"
+        ],
+        "must_have_entities": [
+          "Heavy-Ball (HB) method",
+          "Nesterov's Accelerated Gradient (NAG) scheme",
+          "diagonal linear networks",
+          "Theorem 1",
+          "Equation (6)",
+          "Woodworth et al. (2020)"
+        ]
+      },
+      "review": {
+        "novelty_claims": [
+          {
+            "claim_id": "s4",
+            "text": "The paper distinguishes itself by shifting the focus from the extensively studied implicit biases of Gradient Flow (GF) and Gradient Descent (GD) to the role of momentum in neural architectures—a novel and impactful contribution to the literature.",
+            "stance": "novel",
+            "confidence_lang": "high",
+            "mentions_prior_work": true,
+            "prior_work_strings": [
+              "Gradient Flow (GF)",
+              "Gradient Descent (GD)"
+            ],
+            "evidence_expected": "task_similarity"
+          }
+        ],
+        "all_citations_raw": [
+          "Woodworth et al. (2020)"
+        ]
+      },
+      "mode": "per_contribution",
+      "paper_year": null,
+      "queries": [
+        {
+          "id": "C1",
+          "query": "Analyzing implicit biases of momentum-based optimization techniques in diagonal linear networks. Investigates the dual role of momentum in mitigating initialization effects and its dependency on gradient initialization, steering towards sparse regression.",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "id": "C2",
+          "query": "Analyzing implicit biases of momentum-based optimization techniques in diagonal linear networks. Shifts focus from Gradient Flow/Descent to the role of momentum in neural architectures, presenting a novel and impactful contribution.",
+          "status": "ok",
+          "count": 0
+        },
+        {
+          "id": "C3",
+          "query": "Analyzing implicit biases of momentum-based optimization techniques in diagonal linear networks. Provides an intricate theoretical characterization of momentum's implicit bias, demonstrating its mitigating impact on initialization.",
+          "status": "ok",
+          "count": 0
+        }
+      ],
+      "candidate_pool_top30": [],
+      "stats": {
+        "total_candidates": 0,
+        "after_dedup": 0,
+        "after_nontechnical_filter": 0,
+        "after_year_filter": 0,
+        "final": 0
+      }
+    },
+    {
+      "paper": {
+        "core_task": "Assess scientific papers with structured peer-review analysis.",
         "contributions": [
           "Auto-extracted from available paper/review context."
         ],
         "key_terms": [
-          "different",
-          "tuning",
-          "may",
-          "summary",
-          "proposed",
-          "end-to-end",
-          "general-purpose",
-          "any-to-any",
-          "mm-llm",
-          "system"
+          "momentum",
+          "eta",
+          "continuous",
+          "nag",
+          "authors",
+          "flow",
+          "not",
+          "implicit",
+          "which",
+          "networks"
         ],
         "must_have_entities": [
-          "MM-LLM",
-          "NExT-GPT",
-          "LLM",
-          "Introduced",
-          "Annotated",
-          "What",
-          "Please",
-          "Moon",
-          "Madotto",
-          "Lin",
-          "Nagarajan",
-          "Smith"
+          "NAG",
+          "Kovachki",
+          "Stuart",
+          "Then",
+          "Woodsworth",
+          "Several",
+          "SGD",
+          "And",
+          "Additionaly",
+          "Major",
+          "Compared",
+          "False"
         ]
       },
       "review": {
-        "novelty_claims": [],
+        "novelty_claims": [
+          {
+            "claim_id": "s1",
+            "text": "The work explores the role of momentum gradient descent (HB and NAG) in the implicit bias for diagonal linear networks. The authors borrow the $O(\\eta)$-close continuous flow approximation for momentum from Kovachki and Stuart and use it to derive the...",
+            "stance": "not_novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s2",
+            "text": "The paper has serious novelty issues and technical issues. The authors seem to be not aware of the paper [1] which already analyzed the implicit regularization for momentum in deep learning models. In my opinion, the theorem from the paper...",
+            "stance": "not_novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s3",
+            "text": "1) Major novelty issues",
+            "stance": "novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s4",
+            "text": "In page-3, the authors claim \"Compared to previous works, we develop the continuous time approximations of HB and NAG for deep learning models, **which is still missing in current literature** , and we focus on the implicit bias of HB...",
+            "stance": "not_novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": true,
+            "prior_work_strings": [
+              "previous works"
+            ],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s5",
+            "text": "The implicit bias for learning rate tending to 0 will lead to similar regurlaizations as GF and this approximate momentum flow is already made in [1] with theorems and experiments.",
+            "stance": "not_novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          }
+        ],
         "all_citations_raw": [
-          "2309.16058",
+          "2302.07011",
+          "https://arxiv.org/pdf/2302.07011.pdf>)",
+          "https://openreview.net/forum?id=>",
           "[1]"
         ]
       },
@@ -293,108 +423,272 @@
       "queries": [
         {
           "id": "C1",
-          "query": "Infer the research core task from abstract and introduction. Auto-extracted from available paper/review context.",
+          "query": "Assess scientific papers with structured peer-review analysis. Auto-extracted from available paper/review context.",
           "status": "ok",
-          "count": 0
+          "count": 8
         }
       ],
-      "candidate_pool_top30": [],
+      "candidate_pool_top30": [
+        {
+          "cand_id": "5d30b745ec75a411a305acf91584120a79d055e3",
+          "title": "Systematic Review: Impact of Health Information Technology on Quality, Efficiency, and Costs of Medical Care",
+          "year": 2006,
+          "venue": "Annals of Internal Medicine",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/5d30b745ec75a411a305acf91584120a79d055e3",
+          "embedding": null
+        },
+        {
+          "cand_id": "2a73bbbb84a9fb2a01754c5f4a1642e6f84eb42e",
+          "title": "The human genome and drug discovery after a decade. Roads (still) not taken",
+          "year": 2011,
+          "venue": "",
+          "abstract": "The draft sequence of the human genome became available almost a decade ago but the encoded proteome is not being explored to its fullest. Our bibliometric analysis of several large protein families, including those known to be “druggable”, reveals that, even today, most papers focus on proteins that were known prior to 2000. It is evident that one or more aspects of the biomedical research system severely limits the exploration of the proteins in the 'dark matter' of the proteome, despite unbiased genetic approaches that have pointed to their functional relevance. It is perhaps not surprising that relatively few genome-derived targets have led to approved drugs. The Harlow-Knapp Effect The first significant analyses of the citation activity for human proteins were done for the human protein kinome by Harlow (Grueneberg et al. Proc Natl Acad Sci U S A 2008), and then by Knapp (Fedorov et al. Nat Chem Biol 2010). The human protein kinome comprises 518 members and has been the subject of intense research activity in the public and private sectors (Grant Cell Mol Life Sci 2009). Harlow and colleagues highlighted that a relatively small set of kinases garnered the majority of citations, and that most essential protein kinases, as revealed by RNAi studies, remain relatively unexplored in the scientific literature (Grueneberg et al. Proc Natl Acad Sci U S A 2008). Knapp and colleagues extended this observation to drug discovery by showing that the same small fraction of the human protein kinases that garnered the most citations were also the focus of most patents (Fedorov et al. Nat Chem Biol 2010). We thus define the Harlow-Knapp (H-K) effect as the propensity of the biomedical and pharmaceutical research communities to focus their activities, as quantified by the number of publications and patents, on a small fraction of the proteome. The existence of the H-K effect within the human kinome may derive from a number of causes, including explicit or subliminal pressure within the biomedical enterprise to focus in areas of communal interest, the order of discovery of a protein/gene, and/or the availability of tools to study the proteins. If one of these reason(s) was the underlying cause, the phenomenon would hold for more than the human kinome and it would be resistant to change over time. In this article, we (1) examine the prevalence of the H-K effect; (2) examine publication patterns to explore the H-K effect as a function of time; (3) explore the hypothesis that the availability of reagents is one of the mediators of the H-K effect; and (4) make recommendations as to how researchers and funders might respond in lieu of these findings, particularly given the expectations of the public that the human genome project will facilitate the development of new medicines. Publication patterns preand postthe availability of the human genome The H-K effect was discovered by analyzing the human protein kinome. To examine whether the H-K effect is more broadly observable, we analyzed the citation patterns for the nuclear hormone receptors (NR), which are the targets for many marketed drugs, and found that most of the research activity in this family is also focused on 10% of the family members (Figure 1). Similar patterns are observed for other “druggable” human protein families, such as the human methyltransferases and bromodomain-containing proteins (Supplemental material). We conclude that the H-K effect may be a fundamental feature of research activity and not a protein family-specific phenomenon. Figure 1: Human NR Citations (1950-2009) Percentage of citations for 48 human NRs from 1950-2009 (116,552 total citations), ordered by total citation count over that time frame (blue). Percentage of citations for the year 2009 (11,140 total citations) is shown as a red line highlighting that the bulk of citations from 2009 is still dominated by historically popular receptors. How quickly are publication patterns changing? The H-K effect was initially seen by examining the cumulative number of citations over time (Grueneberg et al.; Federov et al.) for the set of protein kinases. It is possible that the observed H-K effect simply reflects a “carry-over” from pre-genome citations, and that present-day citation patterns are actually changing substantially to focus on the newly discovered family members. To test this idea, we performed a similar citation analysis of the protein kinase family but expanded it to include the distribution of citations overtime time. For each of the protein kinases, we quantified their citations before and after 2002, when the seminal paper charting the human kinome was published (Manning et al. Science 2002). There were a total of ~80,000 citations prior to 2002 and ~120,000 citations after. The normalized distribution of these citations is shown in Figure 2. This analysis revealed that 84% of the citations to protein kinases in 1950-2002 were focused on only 10% of the kinome (50 kinases). Interestingly, the very same kinases continued to garner most of the citations even long after the genome information became widely available (77% of citations between 2003 and 2008, and 74% of the citations in 2009). At the other end of the spectrum, the set of 300 kinases (60% of the kinome) that were at the bottom of the citation list in 2002 remain poorly studied today; in aggregate, they accrued only 5% of the kinase citations in 2009. These data suggest that the availability of the genome sequence has not substantially influenced biomedical research priorities. There are, however, indications that unbiased genomewide studies are slowly influencing publication trends. The three largest spikes in the right hand side of the 2009 citation graph are BRAF (Entrez gene id: 673) (Davies et al. Nature 2002), PTEN Induced Putative Kinase 1 (Entrez gene id : 65018 PINK1) (Valente et al. Science 2004) and Leucine-Rich Repeat Kinase 2 (Entrez gene id : 120892 LRRK2) (Zimprich et al. Neuron 2004) – kinases that have been genetically linked to human disease in the past decade. Figure 2: Human Protein Kinase Publications 1950-2009 Percentage of citations in the years 1950-2002 (kinome publication date), 2003-2008 and 2009 for all human protein kinases. The majority of the publications in all three year ranges, 84%, 77% and 74%, respectively, are associated with the top 50 kinases as ranked by their popularity in 2002. Exceptions to the trend include BRAF, LRRK2 and PINK1, three kinases with few publications in 2002 but substantial growth in 2009. What underlies the H-K effect? If we assume that the latest publication dealing with p38 kinase, currently one of the top ten popular kinases from our bibliometric analysis, is less impactful on our understanding of human health than the first studies of a novel kinase, then the H-K effect may reflect an underlying condition that needs intervention. Therefore, it is important to understand the basis for the H-K effect if society is to capture the most value from the human genome sequence, as well as to advance more innovative targets into drug discovery pipelines. We posit that the H-K effect likely derives from a combination of human nature, the structure of the funding and peer-review systems and the availability of research infrastructure and methods. Human nature. Protein scientists often develop unique expertise within a system and then strive to attain a deeper understanding of the underlying mechanisms. Indeed, the complexity of biology is so rich that it is always possible to ask important questions about even well-studied systems, and in those efforts uncover fascinating and sometimes revolutionary biology (Guerrier-Takada et al. Cell 1983). Thus it is now well-accepted to focus on systems that are well-described, in which questions can be well-formulated and whose analysis will reveal fundamental principles that can hopefully be applied more broadly. It is also true that such discoveries can often only be made by scientists with a deep technical understanding of an experimental system. As Kornberg stated “scientists love to fondle their problems” (Judson, “The Eighth Day of Creation”, Simon and Schuster (1979)). Taken together, these considerations provide sufficient justification for grant panels to support focused science; unfortunately the corollary is that proposing to stray beyond one’s area of expertise is often criticized. In conclusion, the H-K effect derives in part from the norms of curiosity-driven science and the accepted advantages of gaining competence in a given field of research. Organization of funding and review. The format of grant proposals alone encourages research within well-described areas. Grant proposals require that the applicant explain the rationale and significance of the work within the context of existing knowledge, and also to present sufficient preliminary data to convince the reviewer that the proposed research has a reasonable probability of success. These expectations and parameters strongly bias researchers to work on well-studied systems, in which peer endorsement is more likely and the path to results clearer. Scientific success also depends on high quality publications – often assessed by the number of citations or the perceived impact of the journal. Here the system also biases toward well-studied systems because peer-reviewers of manuscripts are more comfortable if work can easily be placed into the context of existing knowledge. Compared with the analysis of a well-known protein, elucidating the function of a novel protein to a level sufficient to be accepted into a “top” journal requires the investment of significantly more effort and resources, and this is much riskier for scientists concerned with timelines of grant renewals, student theses and tenure clocks. The organization of grant applications also conspires against research of the proteome’s dark matter. Given that the most important metrics used to score grants are: contex",
+          "url": "https://www.semanticscholar.org/paper/2a73bbbb84a9fb2a01754c5f4a1642e6f84eb42e",
+          "embedding": null
+        },
+        {
+          "cand_id": "ea28046ed0ac6f8ce1996cc7a3a0186a1028f023",
+          "title": "Editorial",
+          "year": 2021,
+          "venue": "Cuadernos de Administración",
+          "abstract": "This 68th issue of the journal Cuadernos de Administración corresponds to the September-December 2020 period and gives closure to volume 36 on its 44th year. Twenty-twenty was a different year in many respects and with regards to past editorial processes, as it was faced with limitation and challenges associated with situation-specific constraints, new issues, and problems to be addressed, such as research in the sciences of administration, among other areas of the knowledge.As with past issues, the 16 papers published in issue 68 come from the previous months’ call, whose authors - from several countries and different regions of Colombia - entrusted their manuscripts to our editorial process. I thank our peer reviewers who supported us through their experience and expertise in assessing each paper for what we believe is an objectivity-based academic dialogue that seeks to recognize the quality of the scientific output proposed for each issue of Cuadernos de Administración. The first three papers in this issue are “Development of typical vacuum-packed and frozen Boyaca soups”, “Territorial Governance: A bibliometric analysis” and “University reports in Colombia: a contribution to accountability” The first paper’s authors study gastronomy and tourism in the department of Boyacá, Colombia, and their production processes to facilitate product handling and increase their offer to tourists. The second one is a bibliometric literature study analyzing territorial governance by analyzing papers from the Web of Science. The third paper presents the current state of accountability in Colombian public universities through research carried out analyzing university reports using the content analysis method.The second group of papers includes those entitled “The effect of human resource management practices and innovation: Colombian small and medium-sized enterprises”, “Quality Assessment in the Context of Banking Services” and “Performance appraisal: an experience between recognition and contempt” The first paper of that group accounts for the research carried with SME 492 managers in Cali, Bogotá, and Medellín on human resources management practices and their innovation effect. The second paper uses theoretical systematization to approach the quality assessment of services, banking services in this case, from a critical standpoint. The third article is a case study that uses qualitative interviews on a group of workers from a Colombian company in the energy generation and distribution sector. It examined the recognition or contempt experienced by and evidenced in the workers’ discourse after undergoing a performance appraisal designed under the Strategic Human Resources Management (SHRM) logic. The third group of articles consists of those entitled “A comprehensive tax reform under OECD parameters for Colombia”, “Updating the strategic framework for the Spanish port system using a SWOT analysis” and “Correlating affective commitment with prosocial behavior: Does it matter to perceive that work has meaning?” The first one studies tax reforms in Colombia, the orientation of these, and identifies structuring-related problems. The second paper uses the SWOT analysis and benchmarking to analyze the Spanish port system. Finally, in the third paper, a study was conducted on 144 professional employees across various Colombian industries to analyze their prosocial behavior and attitudes in different organizational environments and under varying management practices, which may or may not promote prosocial behavior.“Absenteeism at work, remuneration, and equity: a confusing relationship”, “The role of family dynamics and culture in the psychological ownership of family shareholders in family businesses” and “Prospective and its valuation in public policy of two regional development strategies in Chile” are the papers that follow in this number. The first paper presents the results of a study conducted in a higher education institution that analyzes the relationship between absenteeism, workers’ compensation, and equity variables using statistical methods and based on 840 inputs. The second article studies 14 cases of Colombian and 5 Finns shareholders using qualitative and exploratory methods to analyze the role of family dynamics and culture in developing psychological ownership in family shareholders. The third article studies Chilean public officials’ perception of prospective from a qualitative approach, which is considered a tool for public policies in two regional development strategies. The following two papers are “Social commitment in organizations: a look at Universidad del Valle“ and “Current Challenges of the Social Function of Accounting” The first of the aforementioned papers’ authors study social commitment in a case study applied to the Universidad del Valle through interviews with officials and using content analysis on the Outreach Office’s management reports and the University’s Strategic Development Plans. The second article aims to determine potential social costs and financial statements’ models for social accounting.The last group of articles includes “Strengths and opportunities of sustainable entrepreneurship in Colombia” and “Institutional isomorphism in IPSAS adoption” The first case is an analysis of the strengths and opportunities of sustainable entrepreneurship in Colombia based on the review of papers published in the Colombian context, as available in the primary databases (national journals and university repositories were also included). The last article presents the results of a systematic literature review to study institutional isomorphism in governments’ implementation of IPSAS into their accounting model.The publication of Universidad del Valle’s Faculty of Administration’s 68th issue of Cuadernos de Administración consolidates us as a means of dissemination for scientific knowledge in that area. Twenty twenty-one will see our 45th year of publication, for which there will be a thematic issue on Circular Economy, with the support of HEC Montreal and the ITESM. In that anniversary framework, the first issue will present an analysis of these 45 years’ publications, among other activities. Once again, we thank each of the authors of these 16 papers and the peer reviewers who supported our editorial process, always bearing in mind that each article’s content is its authors’ responsibility. We hope that this issue will contribute to our readers’ academic work and that it will drive our research, reflections, or reviews in the sciences of administration.",
+          "url": "https://www.semanticscholar.org/paper/ea28046ed0ac6f8ce1996cc7a3a0186a1028f023",
+          "embedding": null
+        },
+        {
+          "cand_id": "23e4c3198b26488fc4248ec18cef94de7496942e",
+          "title": "Does research make a difference to public health? Time for scientific journals to cross the Rubicon.",
+          "year": 2014,
+          "venue": "Public Health Action",
+          "abstract": "The International Union Against Tuberculosis and Lung Disease (The Union), Medecins sans Frontieres (MSF) and the Special Programme for Research and Training in Tropical Diseases (TDR) hosted at the World Health Organization, have joined forces under a programme called the Structured Operational Research and Training Initiative (SORT IT) to improve health care delivery and public health through operational research. This is done through integrated operational research and training programmes, in which participants from low- and middle-income countries are enrolled and taken through a research project from protocol development to implementation, data collection and analysis to the writing and submission of a paper to a peer-reviewed journal.1 Between April 2009 and January 2014, we have undertaken 18 programmes (of which 14 are completed), enrolling a total of 212 participants. \n \nWe carefully monitor outputs from each SORT IT programme. Two important outputs, which are relatively easy to monitor, are the number and percentage of enrolled participants who complete the programme and the number of scientific papers that are published in peer-reviewed journals within 18 months of submission. However, an additional, vital output that needs to be monitored is whether any action has been taken in response to the research findings and the subsequent impact of research on policy and practice. Thus, one of our SORT IT targets is to record whether this has been documented in over 80% of projects within 18 months of study completion. \n \nIt is frequently stated that it takes 17 years for research evidence to reach clinical practice,2 although for operational research with a focus on health service delivery we would expect a much shorter time lag. We have recently completed an assessment of the impact on policy and practice for our first eight programmes through a questionnaire survey. The amount of work that went into obtaining the data was considerable, with repeated e-mails sent to course alumni over a period of several months, and personal calls to chase up non-responders. Without the help of a dedicated person allocated to this task, it is unlikely we would have succeeded in our task. \n \nWe therefore propose an innovative role for a journal, namely that of tracking and publishing the impact of its articles. This fulfils a mandate of operational research, and if, for example, this was taken on by Public Health Action (PHA), it would place this journal at the forefront of the discipline. Papers in PHA are published quarterly. An automated e-mail could go out to the corresponding author of a paper published in the Journal 18 months after publication. The e-mail could have a website link that takes the author to a site in which he/she can answer whether the paper has had any influence on policy and practice (Yes/No). If the answer is no, then reasons can be mentioned such as the paper being a review (not applicable), a descriptive methodology or a specific local context. If the answer is yes, then reasons can be articulated for claiming that the research has had such an effect. Supporting material could be added. Authors could be given four weeks to respond and their collective responses then published in either the following quarterly issue of the Journal or annually, in a section entitled ‘Research to Policy and Practice’. The papers would be classified into No response; Not applicable; No effect on policy and practice; Positive effect on policy and practice. In this way, authors could communicate to a wide audience whether their research has made a difference, and this could be the start of a journal-based observatory that systematically tracks this important operational research outcome. \n \nIn the January 2014 issues of the Lancet (January 11–17 and 18–24), there was an excellent five-paper series on increasing the value and reducing the waste of research. An editorial summarised some of the key problems and made useful recommendations.3 A consistent theme in the series was that research is considered a waste if it does not impact on health care, but there were no practical suggestions or recommendations to monitor whether research has made a difference to the public's health and whether, in particular, it has contributed to the optimal use of available resources or an improvement in the effectiveness of health care or health system interventions. \n \nWe would like to advocate that PHA takes the lead in this valuable and exciting new venture, and we hope that other journals would then follow its example. In a December 2013 editorial, PHA was judged to be meeting its goals and targets and wanted to increasingly be seen as the home of operational research.4 We agree with this assessment and vision. However, we believe that the Journal must push the frontiers of operational research and become a vehicle for analysing whether what we do is truly providing health solutions for the poor. This means going beyond the published paper and becoming a forum for assessing whether the research has made a difference. It is a bold step for a journal to aspire to doing more than publish papers, but operational research is about more than just publishing – it is a step to better health care. \n \nOperational research is also about ‘learning while doing’. The proposal we make is in its concept phase, and it may require a task force to work out the finer details of how to translate the idea into practice and how to define impact. The monitoring process is likely to evolve over time, but this could be the first step in a journey to formally and systematically evaluate whether the research is delivering the goods.5 Can PHA cross this Rubicon?",
+          "url": "https://www.semanticscholar.org/paper/23e4c3198b26488fc4248ec18cef94de7496942e",
+          "embedding": null
+        },
+        {
+          "cand_id": "3f9ef41222cecc2ac74b53d3252ea2a7c18ef40c",
+          "title": "Literature Mining Solutions for Life Science Research",
+          "year": 2013,
+          "venue": "Adv. Bioinformatics",
+          "abstract": "Research and development in the area of biomedical literature analysis aims at providing life science researchers with effective means to access and exploit knowledge contained in scientific publications. Virtually all journal publications and many conference proceedings are nowadays readily available in an electronic form—for instance, as abstracts through the MEDLINE citation index or as full-text articles through PubMed Central. Nevertheless, keeping up to date with and searching for recent findings in a research domain remains a tedious task hampered by inefficient and ineffective means for access and exploitation. Biomedical text analysis aims to improve access to unstructured knowledge by alleviating searches, providing auto generated summaries of documents and topics, linking and integrating publications with structured resources, visualizing content for better understanding, and guiding researchers to novel hypotheses and into knowledge discovery. \n \nFocused research over recent years has improved fundamental solutions for biomedical text mining, such as document retrieval, named entity recognition, normalization and grounding, and extraction of relationships, with levels of accuracy that reach human annotators when considering inter annotator agreement. Consequently, more and more integrative analysis tools were put forward by the text mining community targeting a broad audience of end users: generic and task-specific search engines for life science researchers, interfaces for networks synthesis based on textual evidences, or more specialized tools searching for transcription factors, or primer sequences. \n \nThis special issue of Advances in Bioinformatics presents overviews and examples of end-user-oriented biomedical text mining tools for bioinformaticians, molecular biologists, biochemists, clinicians, pharmacologists, and other researchers in life sciences. \n \nWe start with A. Manconi et al. survey on “Literature retrieval and mining in bioinformatics: state of the art and challenges.” The authors introduce the major concepts that life science researchers should be familiar with getting the best out of existing text mining solutions, and survey key tools and research. In a dedicated second part of their survey, the authors address the major challenges both life science researchers and solution developers are facing at this point. The reader will find plenty of references to existing search tools, resources, and research papers. \n \nA. E. Thessen et al. focus on a particular domain, presenting an overview of “Applications of natural language processing in biodiversity science.” The authors review the application of natural processing and machine learning for biological information extraction regarding cellular processes, taxonomic names, and morphological characters. You will find detailed examples, a summary of all steps involved in information extraction, and lots of references to existing tools and resources. \n \nS. T. Ahmed et al. introduce their semantic faceted search engine, BioEve, in “A novel framework to facilitate interactive literature search.” They couple an automated extraction system with a cognitive search and navigation service, to alleviate the process of searching and browsing huge amounts of literature such as provided/delivered by MEDLINE. BioEve enables interactive query refinement and suggests concepts and entities (like genes, drugs, and diseases) to quickly filter and modify search directions, thereby achieving semantic enrichment that improves insight gains while searching literature. \n \nS. V. Landeghem et al. present their EVEX resource in “Exploring biomolecular literature with EVEX: connecting genes through events, homology, and indirect associations.” The authors extracted more than 20 million biomolecular events involving genes and proteins, such as phosphorylation and gene regulation, from MEDLINE. The online tool generates a summary on the searched gene denoting all regulated genes, binding partners, subcellular locations, and other related data linked to the searched gene. \n \nWe conclude this special issue with the paper by A. Divoli et al., discussing whether “Do Peers see more in a paper than its authors.” In a meta-analysis using automatic text analysis, they address questions such as how informative an abstract is compared to the full text; and how peers and authors might view the major contributions of a paper differently. Their analyses are comparing the information content of an abstract, as written by the paper's authors, to sentences that mention the paper as a reference, written by peers. Using this strategy, A. Divoli et al. found, for example, that citing sentences contain 20% additional concepts (likely important contributions) that were not mentioned in the abstract of the paper referred to, but maybe should have been to help attract even more peers.",
+          "url": "https://www.semanticscholar.org/paper/3f9ef41222cecc2ac74b53d3252ea2a7c18ef40c",
+          "embedding": null
+        },
+        {
+          "cand_id": "ca6774de69a2ebd944bc63824da3e9ab2d0f765a",
+          "title": "Biology and Conservation of Martens, Sables, and Fishers: A New Synthesis",
+          "year": 2017,
+          "venue": "",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/ca6774de69a2ebd944bc63824da3e9ab2d0f765a",
+          "embedding": null
+        },
+        {
+          "cand_id": "77119c674cfe05a02e342a0c31f0e194098292dd",
+          "title": "OP-IJEJ150184 1..20",
+          "year": 2015,
+          "venue": "",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/77119c674cfe05a02e342a0c31f0e194098292dd",
+          "embedding": null
+        },
+        {
+          "cand_id": "1b98e364526f0aea3dd50bb5f2c4dad787ef83b3",
+          "title": "Advances in Web-Age Information Management, 6th International Conference, WAIM 2005, Hangzhou, China, October 11-13, 2005, Proceedings",
+          "year": 2005,
+          "venue": "Interational Conference on Web-Age Information Management",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/1b98e364526f0aea3dd50bb5f2c4dad787ef83b3",
+          "embedding": null
+        }
+      ],
       "stats": {
-        "total_candidates": 0,
-        "after_dedup": 0,
-        "after_nontechnical_filter": 0,
-        "after_year_filter": 0,
-        "final": 0
+        "total_candidates": 8,
+        "after_dedup": 8,
+        "after_nontechnical_filter": 8,
+        "after_year_filter": 8,
+        "final": 8
       }
     },
     {
       "paper": {
-        "core_task": "Enable any-to-any multimodal understanding and generation.",
+        "core_task": "Assess scientific papers with structured peer-review analysis.",
         "contributions": [
           "Auto-extracted from available paper/review context."
         ],
         "key_terms": [
-          "multimodal",
-          "proposed",
-          "which",
-          "next-gpt",
-          "mosit",
-          "does",
-          "decoders",
+          "not",
+          "implicit",
+          "momentum",
+          "nag",
+          "bias",
+          "are",
           "authors",
-          "dataset",
-          "understanding"
+          "eta",
+          "continuous",
+          "diagonal"
         ],
         "must_have_entities": [
-          "NExT-GPT",
-          "MM-LLM",
-          "LLM",
-          "MosIT",
-          "Large Language Model",
-          "LLMs",
-          "There",
-          "How",
-          "Can",
-          "Soundness",
-          "Presentation",
-          "Contribution"
+          "Woodworth",
+          "NAG",
+          "Specifically",
+          "Experiments",
+          "Heavy-Ball",
+          "Nesterov",
+          "Accelerated Gradient",
+          "Firstly",
+          "Secondly",
+          "Kovachki",
+          "Stuart",
+          "Then"
         ]
       },
       "review": {
         "novelty_claims": [
           {
             "claim_id": "s1",
-            "text": "The paper introduces NExT-GPT, a novel multimodal large language model (MM-LLM) that integrates a text-based LLM with multimodal adaptors and diffusion decoders to handle text, image, video, and audio inputs and outputs. The model is designed to be flexible, allowing...",
-            "stance": "novel",
+            "text": "This paper extends the analysis of (Woodworth et al., 2020) for the implicit bias over the diagonal linear network from GD to GD with momentum (HB and NAG). Specifically, this paper considers a continuous-time approximation of HB and NAG, and...",
+            "stance": "not_novel",
             "confidence_lang": "medium",
             "mentions_prior_work": false,
-            "prior_work_strings": [
-              "existing models"
-            ],
+            "prior_work_strings": [],
             "evidence_expected": "method_similarity"
           },
           {
             "claim_id": "s2",
-            "text": "The novelty of the proposed method is questionable, as it appears to be a combination of existing models and techniques without significant innovation.",
-            "stance": "novel",
+            "text": "The work explores the role of momentum gradient descent (HB and NAG) in the implicit bias for diagonal linear networks. The authors borrow the $O(\\eta)$-close continuous flow approximation for momentum from Kovachki and Stuart and use it to derive the...",
+            "stance": "not_novel",
             "confidence_lang": "medium",
             "mentions_prior_work": false,
-            "prior_work_strings": [
-              "existing models and techniques without significant innovation"
-            ],
+            "prior_work_strings": [],
             "evidence_expected": "method_similarity"
           },
           {
             "claim_id": "s3",
-            "text": "Reasons: The paper, while introducing a novel multimodal LLM with a flexible architecture and a new dataset, fails to convincingly demonstrate a significant technical contribution over existing models. The primary concerns include the lack of novelty in the approach, the...",
+            "text": "2. The theoretical results are novel and solid.",
+            "stance": "novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s4",
+            "text": "1. The paper is well written and well organized. 2. The paper distinguishes itself by shifting the focus from the extensively studied implicit biases of Gradient Flow (GF) and Gradient Descent (GD) to the role of momentum in neural architectures—a...",
+            "stance": "novel",
+            "confidence_lang": "medium",
+            "mentions_prior_work": false,
+            "prior_work_strings": [],
+            "evidence_expected": "method_similarity"
+          },
+          {
+            "claim_id": "s5",
+            "text": "The paper has serious novelty issues and technical issues. The authors seem to be not aware of the paper [1] which already analyzed the implicit regularization for momentum in deep learning models. In my opinion, the theorem from the paper...",
             "stance": "not_novel",
             "confidence_lang": "medium",
             "mentions_prior_work": false,
-            "prior_work_strings": [
-              "existing models"
-            ],
+            "prior_work_strings": [],
             "evidence_expected": "method_similarity"
           }
         ],
-        "all_citations_raw": []
+        "all_citations_raw": [
+          "2302.07011",
+          "https://arxiv.org/pdf/2302.07011.pdf>)",
+          "https://openreview.net/forum?id=>",
+          "Woodworth et al. (2020)",
+          "[1]"
+        ]
       },
       "mode": "per_contribution",
       "paper_year": null,
       "queries": [
         {
           "id": "C1",
-          "query": "Enable any-to-any multimodal understanding and generation. Auto-extracted from available paper/review context.",
+          "query": "Assess scientific papers with structured peer-review analysis. Auto-extracted from available paper/review context.",
           "status": "ok",
-          "count": 0
+          "count": 8
         }
       ],
-      "candidate_pool_top30": [],
+      "candidate_pool_top30": [
+        {
+          "cand_id": "5d30b745ec75a411a305acf91584120a79d055e3",
+          "title": "Systematic Review: Impact of Health Information Technology on Quality, Efficiency, and Costs of Medical Care",
+          "year": 2006,
+          "venue": "Annals of Internal Medicine",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/5d30b745ec75a411a305acf91584120a79d055e3",
+          "embedding": null
+        },
+        {
+          "cand_id": "2a73bbbb84a9fb2a01754c5f4a1642e6f84eb42e",
+          "title": "The human genome and drug discovery after a decade. Roads (still) not taken",
+          "year": 2011,
+          "venue": "",
+          "abstract": "The draft sequence of the human genome became available almost a decade ago but the encoded proteome is not being explored to its fullest. Our bibliometric analysis of several large protein families, including those known to be “druggable”, reveals that, even today, most papers focus on proteins that were known prior to 2000. It is evident that one or more aspects of the biomedical research system severely limits the exploration of the proteins in the 'dark matter' of the proteome, despite unbiased genetic approaches that have pointed to their functional relevance. It is perhaps not surprising that relatively few genome-derived targets have led to approved drugs. The Harlow-Knapp Effect The first significant analyses of the citation activity for human proteins were done for the human protein kinome by Harlow (Grueneberg et al. Proc Natl Acad Sci U S A 2008), and then by Knapp (Fedorov et al. Nat Chem Biol 2010). The human protein kinome comprises 518 members and has been the subject of intense research activity in the public and private sectors (Grant Cell Mol Life Sci 2009). Harlow and colleagues highlighted that a relatively small set of kinases garnered the majority of citations, and that most essential protein kinases, as revealed by RNAi studies, remain relatively unexplored in the scientific literature (Grueneberg et al. Proc Natl Acad Sci U S A 2008). Knapp and colleagues extended this observation to drug discovery by showing that the same small fraction of the human protein kinases that garnered the most citations were also the focus of most patents (Fedorov et al. Nat Chem Biol 2010). We thus define the Harlow-Knapp (H-K) effect as the propensity of the biomedical and pharmaceutical research communities to focus their activities, as quantified by the number of publications and patents, on a small fraction of the proteome. The existence of the H-K effect within the human kinome may derive from a number of causes, including explicit or subliminal pressure within the biomedical enterprise to focus in areas of communal interest, the order of discovery of a protein/gene, and/or the availability of tools to study the proteins. If one of these reason(s) was the underlying cause, the phenomenon would hold for more than the human kinome and it would be resistant to change over time. In this article, we (1) examine the prevalence of the H-K effect; (2) examine publication patterns to explore the H-K effect as a function of time; (3) explore the hypothesis that the availability of reagents is one of the mediators of the H-K effect; and (4) make recommendations as to how researchers and funders might respond in lieu of these findings, particularly given the expectations of the public that the human genome project will facilitate the development of new medicines. Publication patterns preand postthe availability of the human genome The H-K effect was discovered by analyzing the human protein kinome. To examine whether the H-K effect is more broadly observable, we analyzed the citation patterns for the nuclear hormone receptors (NR), which are the targets for many marketed drugs, and found that most of the research activity in this family is also focused on 10% of the family members (Figure 1). Similar patterns are observed for other “druggable” human protein families, such as the human methyltransferases and bromodomain-containing proteins (Supplemental material). We conclude that the H-K effect may be a fundamental feature of research activity and not a protein family-specific phenomenon. Figure 1: Human NR Citations (1950-2009) Percentage of citations for 48 human NRs from 1950-2009 (116,552 total citations), ordered by total citation count over that time frame (blue). Percentage of citations for the year 2009 (11,140 total citations) is shown as a red line highlighting that the bulk of citations from 2009 is still dominated by historically popular receptors. How quickly are publication patterns changing? The H-K effect was initially seen by examining the cumulative number of citations over time (Grueneberg et al.; Federov et al.) for the set of protein kinases. It is possible that the observed H-K effect simply reflects a “carry-over” from pre-genome citations, and that present-day citation patterns are actually changing substantially to focus on the newly discovered family members. To test this idea, we performed a similar citation analysis of the protein kinase family but expanded it to include the distribution of citations overtime time. For each of the protein kinases, we quantified their citations before and after 2002, when the seminal paper charting the human kinome was published (Manning et al. Science 2002). There were a total of ~80,000 citations prior to 2002 and ~120,000 citations after. The normalized distribution of these citations is shown in Figure 2. This analysis revealed that 84% of the citations to protein kinases in 1950-2002 were focused on only 10% of the kinome (50 kinases). Interestingly, the very same kinases continued to garner most of the citations even long after the genome information became widely available (77% of citations between 2003 and 2008, and 74% of the citations in 2009). At the other end of the spectrum, the set of 300 kinases (60% of the kinome) that were at the bottom of the citation list in 2002 remain poorly studied today; in aggregate, they accrued only 5% of the kinase citations in 2009. These data suggest that the availability of the genome sequence has not substantially influenced biomedical research priorities. There are, however, indications that unbiased genomewide studies are slowly influencing publication trends. The three largest spikes in the right hand side of the 2009 citation graph are BRAF (Entrez gene id: 673) (Davies et al. Nature 2002), PTEN Induced Putative Kinase 1 (Entrez gene id : 65018 PINK1) (Valente et al. Science 2004) and Leucine-Rich Repeat Kinase 2 (Entrez gene id : 120892 LRRK2) (Zimprich et al. Neuron 2004) – kinases that have been genetically linked to human disease in the past decade. Figure 2: Human Protein Kinase Publications 1950-2009 Percentage of citations in the years 1950-2002 (kinome publication date), 2003-2008 and 2009 for all human protein kinases. The majority of the publications in all three year ranges, 84%, 77% and 74%, respectively, are associated with the top 50 kinases as ranked by their popularity in 2002. Exceptions to the trend include BRAF, LRRK2 and PINK1, three kinases with few publications in 2002 but substantial growth in 2009. What underlies the H-K effect? If we assume that the latest publication dealing with p38 kinase, currently one of the top ten popular kinases from our bibliometric analysis, is less impactful on our understanding of human health than the first studies of a novel kinase, then the H-K effect may reflect an underlying condition that needs intervention. Therefore, it is important to understand the basis for the H-K effect if society is to capture the most value from the human genome sequence, as well as to advance more innovative targets into drug discovery pipelines. We posit that the H-K effect likely derives from a combination of human nature, the structure of the funding and peer-review systems and the availability of research infrastructure and methods. Human nature. Protein scientists often develop unique expertise within a system and then strive to attain a deeper understanding of the underlying mechanisms. Indeed, the complexity of biology is so rich that it is always possible to ask important questions about even well-studied systems, and in those efforts uncover fascinating and sometimes revolutionary biology (Guerrier-Takada et al. Cell 1983). Thus it is now well-accepted to focus on systems that are well-described, in which questions can be well-formulated and whose analysis will reveal fundamental principles that can hopefully be applied more broadly. It is also true that such discoveries can often only be made by scientists with a deep technical understanding of an experimental system. As Kornberg stated “scientists love to fondle their problems” (Judson, “The Eighth Day of Creation”, Simon and Schuster (1979)). Taken together, these considerations provide sufficient justification for grant panels to support focused science; unfortunately the corollary is that proposing to stray beyond one’s area of expertise is often criticized. In conclusion, the H-K effect derives in part from the norms of curiosity-driven science and the accepted advantages of gaining competence in a given field of research. Organization of funding and review. The format of grant proposals alone encourages research within well-described areas. Grant proposals require that the applicant explain the rationale and significance of the work within the context of existing knowledge, and also to present sufficient preliminary data to convince the reviewer that the proposed research has a reasonable probability of success. These expectations and parameters strongly bias researchers to work on well-studied systems, in which peer endorsement is more likely and the path to results clearer. Scientific success also depends on high quality publications – often assessed by the number of citations or the perceived impact of the journal. Here the system also biases toward well-studied systems because peer-reviewers of manuscripts are more comfortable if work can easily be placed into the context of existing knowledge. Compared with the analysis of a well-known protein, elucidating the function of a novel protein to a level sufficient to be accepted into a “top” journal requires the investment of significantly more effort and resources, and this is much riskier for scientists concerned with timelines of grant renewals, student theses and tenure clocks. The organization of grant applications also conspires against research of the proteome’s dark matter. Given that the most important metrics used to score grants are: contex",
+          "url": "https://www.semanticscholar.org/paper/2a73bbbb84a9fb2a01754c5f4a1642e6f84eb42e",
+          "embedding": null
+        },
+        {
+          "cand_id": "ea28046ed0ac6f8ce1996cc7a3a0186a1028f023",
+          "title": "Editorial",
+          "year": 2021,
+          "venue": "Cuadernos de Administración",
+          "abstract": "This 68th issue of the journal Cuadernos de Administración corresponds to the September-December 2020 period and gives closure to volume 36 on its 44th year. Twenty-twenty was a different year in many respects and with regards to past editorial processes, as it was faced with limitation and challenges associated with situation-specific constraints, new issues, and problems to be addressed, such as research in the sciences of administration, among other areas of the knowledge.As with past issues, the 16 papers published in issue 68 come from the previous months’ call, whose authors - from several countries and different regions of Colombia - entrusted their manuscripts to our editorial process. I thank our peer reviewers who supported us through their experience and expertise in assessing each paper for what we believe is an objectivity-based academic dialogue that seeks to recognize the quality of the scientific output proposed for each issue of Cuadernos de Administración. The first three papers in this issue are “Development of typical vacuum-packed and frozen Boyaca soups”, “Territorial Governance: A bibliometric analysis” and “University reports in Colombia: a contribution to accountability” The first paper’s authors study gastronomy and tourism in the department of Boyacá, Colombia, and their production processes to facilitate product handling and increase their offer to tourists. The second one is a bibliometric literature study analyzing territorial governance by analyzing papers from the Web of Science. The third paper presents the current state of accountability in Colombian public universities through research carried out analyzing university reports using the content analysis method.The second group of papers includes those entitled “The effect of human resource management practices and innovation: Colombian small and medium-sized enterprises”, “Quality Assessment in the Context of Banking Services” and “Performance appraisal: an experience between recognition and contempt” The first paper of that group accounts for the research carried with SME 492 managers in Cali, Bogotá, and Medellín on human resources management practices and their innovation effect. The second paper uses theoretical systematization to approach the quality assessment of services, banking services in this case, from a critical standpoint. The third article is a case study that uses qualitative interviews on a group of workers from a Colombian company in the energy generation and distribution sector. It examined the recognition or contempt experienced by and evidenced in the workers’ discourse after undergoing a performance appraisal designed under the Strategic Human Resources Management (SHRM) logic. The third group of articles consists of those entitled “A comprehensive tax reform under OECD parameters for Colombia”, “Updating the strategic framework for the Spanish port system using a SWOT analysis” and “Correlating affective commitment with prosocial behavior: Does it matter to perceive that work has meaning?” The first one studies tax reforms in Colombia, the orientation of these, and identifies structuring-related problems. The second paper uses the SWOT analysis and benchmarking to analyze the Spanish port system. Finally, in the third paper, a study was conducted on 144 professional employees across various Colombian industries to analyze their prosocial behavior and attitudes in different organizational environments and under varying management practices, which may or may not promote prosocial behavior.“Absenteeism at work, remuneration, and equity: a confusing relationship”, “The role of family dynamics and culture in the psychological ownership of family shareholders in family businesses” and “Prospective and its valuation in public policy of two regional development strategies in Chile” are the papers that follow in this number. The first paper presents the results of a study conducted in a higher education institution that analyzes the relationship between absenteeism, workers’ compensation, and equity variables using statistical methods and based on 840 inputs. The second article studies 14 cases of Colombian and 5 Finns shareholders using qualitative and exploratory methods to analyze the role of family dynamics and culture in developing psychological ownership in family shareholders. The third article studies Chilean public officials’ perception of prospective from a qualitative approach, which is considered a tool for public policies in two regional development strategies. The following two papers are “Social commitment in organizations: a look at Universidad del Valle“ and “Current Challenges of the Social Function of Accounting” The first of the aforementioned papers’ authors study social commitment in a case study applied to the Universidad del Valle through interviews with officials and using content analysis on the Outreach Office’s management reports and the University’s Strategic Development Plans. The second article aims to determine potential social costs and financial statements’ models for social accounting.The last group of articles includes “Strengths and opportunities of sustainable entrepreneurship in Colombia” and “Institutional isomorphism in IPSAS adoption” The first case is an analysis of the strengths and opportunities of sustainable entrepreneurship in Colombia based on the review of papers published in the Colombian context, as available in the primary databases (national journals and university repositories were also included). The last article presents the results of a systematic literature review to study institutional isomorphism in governments’ implementation of IPSAS into their accounting model.The publication of Universidad del Valle’s Faculty of Administration’s 68th issue of Cuadernos de Administración consolidates us as a means of dissemination for scientific knowledge in that area. Twenty twenty-one will see our 45th year of publication, for which there will be a thematic issue on Circular Economy, with the support of HEC Montreal and the ITESM. In that anniversary framework, the first issue will present an analysis of these 45 years’ publications, among other activities. Once again, we thank each of the authors of these 16 papers and the peer reviewers who supported our editorial process, always bearing in mind that each article’s content is its authors’ responsibility. We hope that this issue will contribute to our readers’ academic work and that it will drive our research, reflections, or reviews in the sciences of administration.",
+          "url": "https://www.semanticscholar.org/paper/ea28046ed0ac6f8ce1996cc7a3a0186a1028f023",
+          "embedding": null
+        },
+        {
+          "cand_id": "23e4c3198b26488fc4248ec18cef94de7496942e",
+          "title": "Does research make a difference to public health? Time for scientific journals to cross the Rubicon.",
+          "year": 2014,
+          "venue": "Public Health Action",
+          "abstract": "The International Union Against Tuberculosis and Lung Disease (The Union), Medecins sans Frontieres (MSF) and the Special Programme for Research and Training in Tropical Diseases (TDR) hosted at the World Health Organization, have joined forces under a programme called the Structured Operational Research and Training Initiative (SORT IT) to improve health care delivery and public health through operational research. This is done through integrated operational research and training programmes, in which participants from low- and middle-income countries are enrolled and taken through a research project from protocol development to implementation, data collection and analysis to the writing and submission of a paper to a peer-reviewed journal.1 Between April 2009 and January 2014, we have undertaken 18 programmes (of which 14 are completed), enrolling a total of 212 participants. \n \nWe carefully monitor outputs from each SORT IT programme. Two important outputs, which are relatively easy to monitor, are the number and percentage of enrolled participants who complete the programme and the number of scientific papers that are published in peer-reviewed journals within 18 months of submission. However, an additional, vital output that needs to be monitored is whether any action has been taken in response to the research findings and the subsequent impact of research on policy and practice. Thus, one of our SORT IT targets is to record whether this has been documented in over 80% of projects within 18 months of study completion. \n \nIt is frequently stated that it takes 17 years for research evidence to reach clinical practice,2 although for operational research with a focus on health service delivery we would expect a much shorter time lag. We have recently completed an assessment of the impact on policy and practice for our first eight programmes through a questionnaire survey. The amount of work that went into obtaining the data was considerable, with repeated e-mails sent to course alumni over a period of several months, and personal calls to chase up non-responders. Without the help of a dedicated person allocated to this task, it is unlikely we would have succeeded in our task. \n \nWe therefore propose an innovative role for a journal, namely that of tracking and publishing the impact of its articles. This fulfils a mandate of operational research, and if, for example, this was taken on by Public Health Action (PHA), it would place this journal at the forefront of the discipline. Papers in PHA are published quarterly. An automated e-mail could go out to the corresponding author of a paper published in the Journal 18 months after publication. The e-mail could have a website link that takes the author to a site in which he/she can answer whether the paper has had any influence on policy and practice (Yes/No). If the answer is no, then reasons can be mentioned such as the paper being a review (not applicable), a descriptive methodology or a specific local context. If the answer is yes, then reasons can be articulated for claiming that the research has had such an effect. Supporting material could be added. Authors could be given four weeks to respond and their collective responses then published in either the following quarterly issue of the Journal or annually, in a section entitled ‘Research to Policy and Practice’. The papers would be classified into No response; Not applicable; No effect on policy and practice; Positive effect on policy and practice. In this way, authors could communicate to a wide audience whether their research has made a difference, and this could be the start of a journal-based observatory that systematically tracks this important operational research outcome. \n \nIn the January 2014 issues of the Lancet (January 11–17 and 18–24), there was an excellent five-paper series on increasing the value and reducing the waste of research. An editorial summarised some of the key problems and made useful recommendations.3 A consistent theme in the series was that research is considered a waste if it does not impact on health care, but there were no practical suggestions or recommendations to monitor whether research has made a difference to the public's health and whether, in particular, it has contributed to the optimal use of available resources or an improvement in the effectiveness of health care or health system interventions. \n \nWe would like to advocate that PHA takes the lead in this valuable and exciting new venture, and we hope that other journals would then follow its example. In a December 2013 editorial, PHA was judged to be meeting its goals and targets and wanted to increasingly be seen as the home of operational research.4 We agree with this assessment and vision. However, we believe that the Journal must push the frontiers of operational research and become a vehicle for analysing whether what we do is truly providing health solutions for the poor. This means going beyond the published paper and becoming a forum for assessing whether the research has made a difference. It is a bold step for a journal to aspire to doing more than publish papers, but operational research is about more than just publishing – it is a step to better health care. \n \nOperational research is also about ‘learning while doing’. The proposal we make is in its concept phase, and it may require a task force to work out the finer details of how to translate the idea into practice and how to define impact. The monitoring process is likely to evolve over time, but this could be the first step in a journey to formally and systematically evaluate whether the research is delivering the goods.5 Can PHA cross this Rubicon?",
+          "url": "https://www.semanticscholar.org/paper/23e4c3198b26488fc4248ec18cef94de7496942e",
+          "embedding": null
+        },
+        {
+          "cand_id": "3f9ef41222cecc2ac74b53d3252ea2a7c18ef40c",
+          "title": "Literature Mining Solutions for Life Science Research",
+          "year": 2013,
+          "venue": "Adv. Bioinformatics",
+          "abstract": "Research and development in the area of biomedical literature analysis aims at providing life science researchers with effective means to access and exploit knowledge contained in scientific publications. Virtually all journal publications and many conference proceedings are nowadays readily available in an electronic form—for instance, as abstracts through the MEDLINE citation index or as full-text articles through PubMed Central. Nevertheless, keeping up to date with and searching for recent findings in a research domain remains a tedious task hampered by inefficient and ineffective means for access and exploitation. Biomedical text analysis aims to improve access to unstructured knowledge by alleviating searches, providing auto generated summaries of documents and topics, linking and integrating publications with structured resources, visualizing content for better understanding, and guiding researchers to novel hypotheses and into knowledge discovery. \n \nFocused research over recent years has improved fundamental solutions for biomedical text mining, such as document retrieval, named entity recognition, normalization and grounding, and extraction of relationships, with levels of accuracy that reach human annotators when considering inter annotator agreement. Consequently, more and more integrative analysis tools were put forward by the text mining community targeting a broad audience of end users: generic and task-specific search engines for life science researchers, interfaces for networks synthesis based on textual evidences, or more specialized tools searching for transcription factors, or primer sequences. \n \nThis special issue of Advances in Bioinformatics presents overviews and examples of end-user-oriented biomedical text mining tools for bioinformaticians, molecular biologists, biochemists, clinicians, pharmacologists, and other researchers in life sciences. \n \nWe start with A. Manconi et al. survey on “Literature retrieval and mining in bioinformatics: state of the art and challenges.” The authors introduce the major concepts that life science researchers should be familiar with getting the best out of existing text mining solutions, and survey key tools and research. In a dedicated second part of their survey, the authors address the major challenges both life science researchers and solution developers are facing at this point. The reader will find plenty of references to existing search tools, resources, and research papers. \n \nA. E. Thessen et al. focus on a particular domain, presenting an overview of “Applications of natural language processing in biodiversity science.” The authors review the application of natural processing and machine learning for biological information extraction regarding cellular processes, taxonomic names, and morphological characters. You will find detailed examples, a summary of all steps involved in information extraction, and lots of references to existing tools and resources. \n \nS. T. Ahmed et al. introduce their semantic faceted search engine, BioEve, in “A novel framework to facilitate interactive literature search.” They couple an automated extraction system with a cognitive search and navigation service, to alleviate the process of searching and browsing huge amounts of literature such as provided/delivered by MEDLINE. BioEve enables interactive query refinement and suggests concepts and entities (like genes, drugs, and diseases) to quickly filter and modify search directions, thereby achieving semantic enrichment that improves insight gains while searching literature. \n \nS. V. Landeghem et al. present their EVEX resource in “Exploring biomolecular literature with EVEX: connecting genes through events, homology, and indirect associations.” The authors extracted more than 20 million biomolecular events involving genes and proteins, such as phosphorylation and gene regulation, from MEDLINE. The online tool generates a summary on the searched gene denoting all regulated genes, binding partners, subcellular locations, and other related data linked to the searched gene. \n \nWe conclude this special issue with the paper by A. Divoli et al., discussing whether “Do Peers see more in a paper than its authors.” In a meta-analysis using automatic text analysis, they address questions such as how informative an abstract is compared to the full text; and how peers and authors might view the major contributions of a paper differently. Their analyses are comparing the information content of an abstract, as written by the paper's authors, to sentences that mention the paper as a reference, written by peers. Using this strategy, A. Divoli et al. found, for example, that citing sentences contain 20% additional concepts (likely important contributions) that were not mentioned in the abstract of the paper referred to, but maybe should have been to help attract even more peers.",
+          "url": "https://www.semanticscholar.org/paper/3f9ef41222cecc2ac74b53d3252ea2a7c18ef40c",
+          "embedding": null
+        },
+        {
+          "cand_id": "ca6774de69a2ebd944bc63824da3e9ab2d0f765a",
+          "title": "Biology and Conservation of Martens, Sables, and Fishers: A New Synthesis",
+          "year": 2017,
+          "venue": "",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/ca6774de69a2ebd944bc63824da3e9ab2d0f765a",
+          "embedding": null
+        },
+        {
+          "cand_id": "77119c674cfe05a02e342a0c31f0e194098292dd",
+          "title": "OP-IJEJ150184 1..20",
+          "year": 2015,
+          "venue": "",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/77119c674cfe05a02e342a0c31f0e194098292dd",
+          "embedding": null
+        },
+        {
+          "cand_id": "1b98e364526f0aea3dd50bb5f2c4dad787ef83b3",
+          "title": "Advances in Web-Age Information Management, 6th International Conference, WAIM 2005, Hangzhou, China, October 11-13, 2005, Proceedings",
+          "year": 2005,
+          "venue": "Interational Conference on Web-Age Information Management",
+          "abstract": "",
+          "url": "https://www.semanticscholar.org/paper/1b98e364526f0aea3dd50bb5f2c4dad787ef83b3",
+          "embedding": null
+        }
+      ],
       "stats": {
-        "total_candidates": 0,
-        "after_dedup": 0,
-        "after_nontechnical_filter": 0,
-        "after_year_filter": 0,
-        "final": 0
+        "total_candidates": 8,
+        "after_dedup": 8,
+        "after_nontechnical_filter": 8,
+        "after_year_filter": 8,
+        "final": 8
       }
     }
   ]
